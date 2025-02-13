@@ -68,6 +68,7 @@ public class Cliente {
             salida = new PrintWriter(socket.getOutputStream(), true);
 
             // Pedir nombre de usuario
+            System.out.println("Este es un mensaje nuevo");
             String usuario = JOptionPane.showInputDialog("Ingrese su nombre de usuario:");
             if (usuario == null || usuario.trim().isEmpty()) {
                 usuario = "Usuario_" + new java.util.Random().nextInt(1000);
